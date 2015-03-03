@@ -1,3 +1,14 @@
+/*  Author: noamme
+ *  Date: January 26, 2015
+ *  Source: https://oj.leetcode.com/problems/roman-to-integer/
+ *
+ * Given a roman numeral, convert it to an integer.
+ *
+ * Input is guaranteed to be within the range from 1 to 3999.
+ *
+ */
+
+
 import java.util.*;
 
 public class RomanToInteger {
@@ -5,14 +16,20 @@ public class RomanToInteger {
 
     public static void main(String[] args){
         
-        System.out.println(romanToInt("XIV"));
+        System.out.println(romanToInt("XIV")); //sample input
     }
+
+    /*  
+     * Converts Roman Numeral to Integer
+     */
+
 
     public static int romanToInt(String s) {
         int length = s.length();
         String[] array = s.split("(?!^)");
         int counter = 0;
 
+        //map showing value of each roman numeral
         Map<String, Integer> map = new HashMap<String, Integer>();
         map.put("M", 1000);
         map.put("D", 500);
@@ -33,6 +50,7 @@ public class RomanToInteger {
                 if(Double.compare(first, second) >= 0) {
                     counter = counter + first;
                 }
+                //this determines if roman numeral goes before or after existing numeral
                 else{
                     if(second - first < 10){
                         counter = counter - 1;
@@ -58,21 +76,3 @@ public class RomanToInteger {
 
 }
 
-
-
-
-         
-
-
-
-
-
-        
-
-
-
-
-
-
-
-//M = 1000, D = 500, C = 100, L = 50, X = 10,  I = 1
