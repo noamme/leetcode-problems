@@ -1,6 +1,6 @@
 /*  Author: noamme
- *  Date: February 8, 2015
- *  Source: https://oj.leetcode.com/problems/valid-palindrome/
+ *  Date: March 3, 2015
+ *  Source: https://oj.leetcode.com/problems/majority-element/
  *
  *  Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
  *
