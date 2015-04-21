@@ -1,15 +1,23 @@
+/*  Author: noamme
+ *  Date: February 9. 2015
+ *  Source: https://oj.leetcode.com/problems/rotate-array/
+ *
+ * Rotate an array of n elements to the right by k steps.
+ *
+ * For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4].
+ */
+
+
 public class RotateArray {
     
  	public static void main(String[] args){
 
- 		int[] nums = new int[] {1, 2};
+ 		int[] nums = new int[] {1, 2, 3, 4, 5, 6, 7}; //sample input
 
- 		rotate(nums, 1);
+ 		rotate(nums, 3);
 
 
     }
-
-
 
     public static void rotate(int[] nums, int k) {
 

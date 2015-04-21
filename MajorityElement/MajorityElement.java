@@ -16,7 +16,7 @@ public class MajorityElement {
 
  	public static void main(String[] args){
 
- 		int[] test = new int[] {1, 2, 2, 3};
+ 		int[] test = new int[] {1, 2, 2, 3}; //sample input
 
  		System.out.println(majorityElement(test));
 
